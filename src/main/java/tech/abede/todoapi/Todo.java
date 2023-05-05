@@ -1,4 +1,4 @@
-package tech.abede.todoapi.model;
+package tech.abede.todoapi;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
