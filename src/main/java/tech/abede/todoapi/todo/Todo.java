@@ -1,5 +1,6 @@
-package tech.abede.todoapi;
+package tech.abede.todoapi.todo;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,9 +23,12 @@ public class Todo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String description;
-    private Boolean isFinish = false;
+
+    @Column(name = "is_finish")
+    private boolean isFinish = false;
 
     public void isFinishTrue(){
         this.isFinish = true;
     }
+
 }
