@@ -30,5 +30,4 @@ public class Todo {
     public void isFinishTrue(){
         this.isFinish = true;
     }
-
 }
